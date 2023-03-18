@@ -11,5 +11,24 @@ namespace LinkedList
         static void Main(string[] args)
         {
         }
+
+        //traversing a Linked List
+        //Finding an Element in a Linked List
+
+        struct Node
+        {
+            int value;
+            
+        }
+
+        struct Start
+        {
+            Node node;
+        }
+
+        struct End
+        {
+            Node =null;
+        }
     }
 }
