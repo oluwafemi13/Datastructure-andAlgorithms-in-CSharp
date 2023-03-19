@@ -7,3 +7,8 @@
 *Zero memory wastage
 *insert new Elements till memory is available
 
+Types of LinkedList
+*singly Linked List: 
+*doubly Linked List
+*Circular Linked List
+*Circular Doubly Linked List

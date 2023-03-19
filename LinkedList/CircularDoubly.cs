@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinkedList
 {
-    internal class CircularLinkedList
+    public class CircularDoubly
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinkedList
 {
-    public class Doubly
+    public class CircularSingly
     {
     }
 }

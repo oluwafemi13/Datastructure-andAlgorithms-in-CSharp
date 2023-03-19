@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinkedList
 {
-    internal class SinglyLinkedList
+    public class Singly
     {
     }
 }

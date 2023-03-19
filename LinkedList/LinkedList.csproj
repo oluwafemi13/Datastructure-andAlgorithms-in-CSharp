@@ -43,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circular.cs" />
+    <Compile Include="CircularDoubly.cs" />
+    <Compile Include="CircularSingly.cs" />
     <Compile Include="Doubly.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
