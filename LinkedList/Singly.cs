@@ -25,5 +25,46 @@ namespace LinkedList
             return node;
 
         }
+
+        public void insertValueInLinkedList(int value, int location)
+        {
+            //insert at the begining of a linked List
+            //check if the list is created
+            Node node = new Node();
+            node.value = value;
+            if(head == null)
+            {
+                CreateSinglyLinkedList(value);
+            }
+            else if(location == 0)
+            {
+                node.Next = head;
+                head = node;
+
+            }else if(location >=size )
+            {
+                Node lastNode = tail.Next;
+                node.Next = null;
+                tail = node;
+                lastNode = node;
+
+            }
+            else
+            {
+                Node tempNode = head;
+                int count = 0;
+                while(count <location - 1)
+                {
+                    tempNode = tempNode.Next;
+                    count++;
+                }
+                Node NextNode = tempNode.Next;
+                node.Next = NextNode;
+                tempNode.Next = node;
+            }
+            size++;
+
+
+        }
     }
 }

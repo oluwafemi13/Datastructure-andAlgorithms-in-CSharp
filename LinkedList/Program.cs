@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,25 +11,16 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
+            Singly si = new Singly();
+             
+            Console.WriteLine();
+            Console.ReadLine();
         }
 
         //traversing a Linked List
         //Finding an Element in a Linked List
 
-        struct Node
-        {
-            int value;
-            
-        }
-
-        struct Start
-        {
-            Node node;
-        }
-
-        struct End
-        {
-            Node =null;
-        }
+        
+        
     }
 }
