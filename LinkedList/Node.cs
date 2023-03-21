@@ -8,7 +8,7 @@ namespace LinkedList
 {
     public class Node
     {
-        public object value;
+        public int value;
         public Node Next;
     }
 }

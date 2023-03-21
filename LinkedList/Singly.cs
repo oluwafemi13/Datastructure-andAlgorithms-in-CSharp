@@ -41,7 +41,9 @@ namespace LinkedList
                 node.Next = head;
                 head = node;
 
-            }else if(location >=size )
+            }
+            //insert in a pa rticular location
+            else if(location >=size )
             {
                 Node lastNode = tail.Next;
                 node.Next = null;
@@ -65,6 +67,46 @@ namespace LinkedList
             size++;
 
 
+        }
+
+        public void TraversingSingleLinkedList()
+        {
+            if(head == null)
+            {
+                Console.WriteLine("Linked List does not Exist");
+            }
+            else
+            {
+                Node tempnode = head;
+                for(int i=0; i<size; i++)
+                { 
+                    Console.WriteLine(tempnode.value+ "/n");
+                    tempnode = tempnode.Next;
+                }
+            }
+        }
+
+        //searching for a value in the List
+        public bool search(int nodeValue)
+        {
+            int count = 0;
+            if(head == null)
+            {
+                Console.WriteLine("List does not exist");
+            }
+            Node tempNode = head;
+            while(tempNode.Next != null)
+            {
+                if(tempNode.value == nodeValue)
+                {
+                    Console.WriteLine(count);
+                    return true;
+
+                }
+                tempNode = tempNode.Next;
+                count++;
+            }
+            return false;
         }
     }
 }
